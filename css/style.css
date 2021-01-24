@@ -725,6 +725,10 @@ footer.footer-area{
 /* MEDIA QUERY For Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (max-width: 600px) {
+
+    .map-secction{
+        width: 400px;
+    }
     
     .site-main {
         width: 100vh;
@@ -765,7 +769,18 @@ footer.footer-area{
        margin-left: 5rem;
     }
     
-    
+    .site-main > .services-area .services{
+        background: rgba(248, 252, 253, 0.973);
+        border-radius: 6px;
+        height: 23rem;
+        margin-left: 100px;
+        transition: box-shadow .7s ease;
+    }
+    .site-main .site-banner .site-title h1{
+        font-size: 4rem;
+        color: black;
+        font-family: var(--montserrat);
+    }
   }
   
 

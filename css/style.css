@@ -779,7 +779,7 @@ footer.footer-area{
     .site-main .site-banner .site-title h1{
         font-size: 4rem;
         color: black;
-        font-family: var(--montserrat);
+        font-family: montserrat;
     }
   }
   

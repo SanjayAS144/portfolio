@@ -1,0 +1,772 @@
+
+/* import fonts from fonts.css file */ 
+@import url(./fonts.css);
+
+
+/* css variables */ 
+@import url(./partials/_variables.css);
+
+/* import global styling */ 
+@import url(./partials/_global.css);
+
+
+/* start navigation */ 
+html{
+    scroll-behavior: smooth;
+    animation: ease-in-out;
+}
+
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 1rem ;
+
+}
+
+.header_area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--montserrat);
+    text-transform: uppercase;
+    padding: 1.2rem;
+    color: var(--title-color);
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+/* end navigation */ 
+
+/* Banner Area */ 
+.site-main{
+    background-color: #f9f3ed;
+}
+
+.site-main .site-banner {
+    /* height: 850px; */
+    background: url(../img/banner/poster1.jpg) no-repeat 0% 50%;
+    
+}
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+    color: rgb(71, 71, 71);
+}
+
+.site-main .site-banner .site-title h3::after{
+    content: " ";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+.site-main .site-banner .site-title h1{
+    font-size: 5rem;
+    color: black;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    color: black;
+    font:'Montserrat',cursive;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 100%;
+    height: 850px;
+    margin-left: 4rem;
+    animation: ease-in-out;
+}
+
+.divider{
+    height:250px;
+    width:calc(100% + 1.3px);
+}
+
+
+
+/* End Banner Area */ 
+
+/* Start About Area */ 
+
+.site-main .about-area1{
+    background-color: #f9f3ed;
+    
+}
+
+
+.site-main .about-area1 .about-title h2 > span{
+    display: block;
+    font: normal bold 29px/ 60px var(--montserrat);
+    letter-spacing: 21px;
+}
+
+.site-main .about-area1 .about-title .paragraph > p{
+    padding: .4rem 0;
+}
+
+/* End About Area */ 
+
+/* start Skill Area*/
+
+.about {
+    padding-bottom: 1rem;
+    margin-left: 6rem;
+  }
+  
+  .about .heading {
+    text-align: center;
+    font:500 50px/35px var(--montserrat);
+    color: #333;
+    margin: 3rem 0;
+    padding-top: 6rem;
+    position: relative;
+  }
+  
+  .about .heading::after {
+    content: '';
+    position: absolute;
+    bottom: -.5rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    height: .3rem;
+    width: 5rem;
+    background: #333;
+  }
+  
+  .about .info {
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+  
+  .about .info h2 {
+    font-size: 3rem;
+    color: #225687;
+  }
+  
+  .skill-bar{
+      padding-right: 5rem;
+  }
+  
+  .about .info .skill-bar h3 {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color:  #263240;
+    font-family: var(--montserrat);
+  }
+  
+  .about .info .skill-bar h3 span {
+    display: block;
+    text-align: end;
+    font-size: 1.5rem;
+    color: #225687;
+    font-family: var(--montserrat);
+  }
+  
+  .about .info .skill-bar .bar {
+    width: 100%;
+    height: .4rem;
+    margin-top: 5px;
+    border-radius: 4px;
+    background: #ccc;
+    position: relative;
+  }
+  
+  .about .info .skill-bar .bar span {
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;;
+    background: var(--gradient-color);
+  }
+  .fill {
+    width: 0% !important;
+}
+
+.fill1_ {
+  transition: all 1s ease-in-out;
+  width: 100% !important;
+}
+.fill2_ {
+  transition: all 2s ease-in-out;
+  width: 80% !important;
+}
+.fill3_ {
+  transition: all 3s ease-in-out;
+  width: 50% !important;
+}
+.fill4_ {
+  transition: all 2s ease-in-out;
+  width: 80% !important;
+}
+
+.fill5_ {
+  transition: all 1s ease-in-out;
+  width: 30% !important;
+}
+
+.fill6_ {
+  transition: all 3s ease-in-out;
+  width: 90% !important;
+}
+  
+  .about .info .skill-bar .bar1 span {
+    width: 85%;
+    animation: 2s;
+  }
+  
+  .about .info .skill-bar .bar2 span {
+    width: 85%;
+    -webkit-animation:ease-in;
+    animation: three-skill 1s ease-in;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  
+  .about .info .skill-bar .bar3 span {
+    width: 75%;
+  }
+  
+  .about .info .skill-bar .bar4 span {
+    width: 70%;
+  }
+  .about .info .skill-bar .bar5 span {
+    width: 55%;
+  }
+  .about .info .skill-bar .bar6 span {
+    width: 75%;
+  }
+
+/* End Skill Area*/
+
+
+/* Start Brand Area */ 
+
+.brand-area{
+    padding-top: 5rem   ;
+}
+
+
+.site-main .brand-area .first-row .col-lg-4{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 5rem;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand{
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0;
+    width: 280px;
+    justify-content: center;
+    align-content: center;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand > img{
+    width: 50%;
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img{
+    filter: brightness(0.15);
+}
+
+.site-main .brand-area .experience-area{
+    padding-left: 1rem;
+}
+
+.site-main .brand-area .experience-area span{
+    display: block;
+}
+
+.site-main .brand-area .experience-area .years-area{
+    background: url(../img/client-info-bg.png) no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    margin-left: 5rem;
+    padding-left: 8rem;
+    position: relative;
+}
+
+.site-header{
+    margin-top: 3rem;
+}
+
+.site-main .brand-area .experience-area .bg-panel{
+    position: absolute;
+    left: -190px; top: 0%;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 340px;
+    z-index: -1;
+}
+
+.site-main .brand-area .experience-area .years-area .years{
+    font: normal bold 84px/40px var(--roboto);
+    color: var(--primary-color2);
+    z-index: 2;
+}
+
+.site-main .brand-area .experience-area .years-area h2 > span{
+    font: normal 600 22px/30px var(--roboto);
+}
+
+.site-main .brand-area .experience-area .call-area{
+    padding-left: 10rem;
+}
+
+/* End Brand Area */ 
+
+/* Services Area */ 
+
+.site-main .services-area{
+    padding: 0rem 0rem; 
+}
+
+.site-main .services-area .services-title{
+    padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1{
+    font-size: 25px;
+}
+
+.site-main > .services-area .services{
+    background: rgba(248, 252, 253, 0.973);
+    padding: 2rem 0;
+    width: 16rem;
+    border-radius: 6px;
+    height: 23rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .7s ease;
+}
+
+.site-main > .services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+
+.text-secondary {
+    font-size: 14px;
+}
+
+
+
+/* End Services Area */ 
+
+
+/* Project Area */ 
+
+.site-main .project-area{
+    padding: 0rem 0;
+}
+
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--roboto);
+    text-transform: uppercase;
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 700 25px/12px var(--roboto);
+}
+
+.site-main .project-area .button-group button + button{
+    padding-left: 3rem;
+}
+
+
+
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+.tt-shape1{
+    height: 250px;
+    color: #000;
+}
+
+
+/* End Project Area */ 
+
+
+/* About Me */ 
+.about-area{
+    background-color: white;
+    padding: 0 0;
+}
+
+.site-main .about-area .about-title p{
+    padding: 1rem 7rem;
+}
+
+.site-main .about-area .client{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    border-radius: 6px;
+    margin: 3rem 0rem;
+}
+
+.site-main .about-area .client .client-img{
+    padding-top: 3rem;
+}
+
+.site-main .about-area .client .about-client{
+    padding-top: 2rem;
+}
+
+.site-main .about-area .client .about-client h4{
+    font: normal 500 21px/ 20px var(--roboto);
+}
+
+.site-main .about-area .client .about-client p{
+    font-size: 14px;
+}
+
+.site-main .about-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.site-main .about-area .owl-carousel .owl-dots .owl-dot.active span{
+    background: var(--primary-color);
+    width: 12px;
+    height: 12px;
+}
+
+
+
+/* End About Me */ 
+
+/* Subscribe me */ 
+.subscribe-us-area{
+    padding-bottom: 10px;
+}
+
+.site-main .subscribe-us-area .subscribe{
+    background: url(../img/subscribe-bg.png) no-repeat;
+    background-size: cover;
+    padding: 10rem 0rem;
+    margin: 3rem auto;
+    align-content: center;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title h4{
+    font: normal 700 30px/ 30px var(--roboto);
+    color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title p{
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input{
+    width: 500px;
+    margin-left: 80px;
+    margin-right: 50px;
+    padding: 1.5rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    margin-bottom: 10px;
+    color: white;
+    font: normal 500 17px/20px var(--roboto);
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
+    color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button{
+    background: whitesmoke;
+    color: #000;
+    padding: .7rem 2rem;
+    margin-top: 10px;
+}
+
+/* End subscribe me */ 
+
+/* Footer Area */ 
+
+footer.footer-area{
+    padding: 5rem 0;
+    background: url(../img/footer-bg.png) no-repeat;
+}
+
+footer.footer-area .social h5{
+    font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+    color: var(--primary-color);
+}
+
+
+/* End Footer */ 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .main-start-image {
+        display: none !important; 
+    }
+    .site-main .about-area1{
+        margin-top: 5rem;
+        padding-top: 5rem;
+    }
+    .site-main .site-banner {
+        /* height: 840px; */
+        background: url(../img/banner/poster1.jpg) no-repeat 0% 50%;
+        
+    }
+
+    .site-buttons{
+        padding-bottom: 100px;
+    }
+
+    .about-image{
+        margin-top: -150px;
+        padding-top: 0px;
+    }
+    .divider{
+        height: 180px;
+    }
+    /* start Skill Area*/
+
+.about {
+    padding-bottom: 1rem;
+    margin-left: 4rem;
+  }
+  
+  .about .heading {
+    text-align: center;
+    font:400 40px/30px var(--montserrat);
+    color: #333;
+    margin: 3rem 0;
+    padding-top: 6rem;
+    position: relative;
+  }
+
+  
+  .about .info {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  
+
+  .about .info .skill-bar h3 {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color:  #263240;
+    font-family: var(--montserrat);
+  }
+  .site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 300 16px/130px var(--roboto);
+    text-transform: uppercase;
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 500 20px/12px var(--roboto);
+}
+  
+ 
+/* End Skill Area*/
+
+}
+
+/* MEDIA QUERY For Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 768px){
+
+    .site-main {
+        width: 100vh;
+    }
+
+
+    .main-start-image {
+        display: none !important;
+    }
+    .site-main .site-banner {
+        /* height: 800px; */
+        background: url(../img/banner/poster1.jpg) no-repeat 0% 50%;
+        
+    }
+    .about-image{
+        width: 100%;
+    }
+
+    .divider{
+        height: 150px;
+    
+    
+    }
+     /* start Skill Area*/
+
+.about {
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .about .heading {
+    text-align: center;
+    font:400 40px/30px var(--montserrat);
+    color: #333;
+    margin: 3rem 0;
+    padding-top: 6rem;
+    position: relative;
+  }
+
+  
+  .about .info {
+    position: relative;
+    align-items: center;
+    margin-right: -5rem;
+  }
+  
+
+  .about .info .skill-bar h3 {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color:  #263240;
+    font-family: var(--montserrat);
+  }  
+ 
+/* End Skill Area*/
+
+/* Subscribe me */ 
+
+.site-main .subscribe-us-area .subscribe{
+    background: url(../img/subscribe-bg.png);
+    padding: 5rem 5rem;
+    background-size: 100%;
+    margin: 3rem auto;
+
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title h4{
+    font: normal 500 20px/ 30px var(--roboto);
+    color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title p{
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input{
+    width: 400px;
+    padding: 1.5rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    margin-bottom: 10px;
+    color: white;
+    font: normal 500 17px/20px var(--roboto);
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
+    color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button{
+    background: whitesmoke;
+    color: #000;
+    padding: .7rem 2rem;
+    margin-top: 30px;
+}
+
+footer.footer-area{
+    width: 100vh;
+}
+
+/* End subscribe me */ 
+    
+}
+
+
+/* MEDIA QUERY For Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 600px) {
+    
+    .site-main {
+        width: 100vh;
+    }
+
+    .main-start-image {
+        display: none !important;
+    }
+    .site-main .site-banner {
+        background: url(../img/banner/poster1.jpg) no-repeat 0% 50%;
+        
+    }
+    .about-image{
+        width: 100%;
+    }
+
+    .divider{
+        height: 150px;
+    
+    
+    }
+    .divider1{
+        margin-top: -1px;
+    
+    }
+
+    footer.footer-area{
+        width: 100vh;
+    }
+    .site-main .brand-area .experience-area .call-area{
+        padding-left: 10rem;
+        margin-left: 10rem;
+    }
+    .site-main .brand-area .experience-area .years-area{
+        margin-left: 10rem;
+    }
+    .site-main .brand-area .experience-area .years-area .years{
+       margin-left: 5rem;
+    }
+    
+    
+  }
+  
+
+

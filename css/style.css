@@ -85,7 +85,7 @@ html{
     font-size: 1.5rem;
     padding-bottom: 1rem;
     color: black;
-    font:'Montserrat',cursive;
+    font:'Montserrat';
 }
 
 .site-main .site-banner .banner-image > img{

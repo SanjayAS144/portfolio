@@ -23,6 +23,6 @@ html, body{
    
 
     /* font family variables. */ 
-    --roboto: 'Roboto', cursive;
-    --montserrat:'Montserrat',cursive;
+    --roboto: 'Roboto';
+    --montserrat:'Montserrat';
 } 

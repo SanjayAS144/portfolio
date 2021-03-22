@@ -619,6 +619,18 @@ footer.footer-area .social a:hover > i{
     .site-main {
         width: 100vh;
     }
+    .site-main .brand-area .first-row .col-lg-4{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        /* margin-left: 5rem; */
+    }
+    .site-main .brand-area .first-row .col-lg-4{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-left: -0.5rem;
+    }
 
 
     .main-start-image {
@@ -659,13 +671,15 @@ footer.footer-area .social a:hover > i{
   .about .info {
     position: relative;
     align-items: center;
-    margin-right: -5rem;
+    /* margin-right: -5rem; */
   }
   
 
   .about .info .skill-bar h3 {
     margin-top: 2rem;
     font-size: 1rem;
+    text-align: start;
+    margin-left: 50px;
     color:  #263240;
     font-family: var(--montserrat);
   }  
@@ -727,9 +741,16 @@ footer.footer-area{
 @media only screen and (max-width: 600px) {
 
     .map-secction{
-        width: 400px;
+        width: 100vh;
     }
     
+    .site-main .brand-area .first-row .col-lg-4{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-left: -0.3rem;
+    }
+
     .site-main {
         width: 100vh;
     }
@@ -760,10 +781,10 @@ footer.footer-area{
     }
     .site-main .brand-area .experience-area .call-area{
         padding-left: 10rem;
-        margin-left: 10rem;
+        margin-left: 8rem;
     }
     .site-main .brand-area .experience-area .years-area{
-        margin-left: 10rem;
+        margin-left: 8rem;
     }
     .site-main .brand-area .experience-area .years-area .years{
        margin-left: 5rem;
@@ -781,6 +802,15 @@ footer.footer-area{
         color: black;
         font-family: montserrat;
     }
+    .about .info .skill-bar .bar {
+        width: 100%;
+        height: .4rem;
+        margin-top: 5px;
+        border-radius: 4px;
+        background: #ccc;
+        position: relative;
+        margin-left: 50px;
+      }
   }
   
 

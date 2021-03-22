@@ -13,6 +13,11 @@
         padding: 2%;
         margin: 0%;
     }
+    .site-main .about-area1 .about-title h2 > span{
+        display: block;
+        font: normal bold 29px/ 60px var(--montserrat);
+        letter-spacing: 21px;
+    }
 
     .site-main .site-banner .site-title h1{
         font-size: 41px;
@@ -34,6 +39,11 @@
     .site-main .about-area .about-title h2 > span{
         font-size: 31px;
         letter-spacing: 10px;
+    }
+    .site-main .about-area1 .about-title h2 > span{
+        display: block;
+        font: normal bold 29px/ 60px var(--montserrat);
+        letter-spacing: 21px;
     }
 
     .site-main .brand-area .experience-area .years-area{
@@ -75,12 +85,17 @@
     .container{
         max-width: 90%;
     }
+    .site-main .about-area1 .about-title h2 > span{
+        display: block;
+        font: normal bold 29px/ 60px var(--montserrat);
+        letter-spacing: 21px;
+    }
 
     .site-main .brand-area,
     .site-main .services-area .services-title,
     .site-main .about-area{
         padding-top: 0rem;
-        padding-bottom: 5rem;
+        /* padding-bottom: 5rem; */
     }
 
 

@@ -16,6 +16,7 @@ html{
     animation: ease-in-out;
 }
 
+
 .header_area .main-menu .navbar .navbar-brand{
     padding: 0 2rem 0 5rem;
 }
@@ -271,7 +272,6 @@ html{
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-left: 5rem;
 }
 
 .site-main .brand-area .first-row .col-lg-4 > .single-brand{
@@ -362,13 +362,14 @@ html{
     font-size: 25px;
 }
 
+
 .site-main > .services-area .services{
     background: rgba(248, 252, 253, 0.973);
     padding: 2rem 0;
     width: 16rem;
     border-radius: 6px;
     height: 23rem;
-    margin: 5rem .5rem;
+    margin: 2rem .5rem;
     transition: box-shadow .7s ease;
 }
 
@@ -736,6 +737,7 @@ footer.footer-area{
 }
 
 
+
 /* MEDIA QUERY For Small devices (portrait tablets and large phones, 600px and up) */
 
 @media only screen and (max-width: 600px) {
@@ -812,6 +814,103 @@ footer.footer-area{
         margin-left: 50px;
       }
   }
+
+  @media only screen and (min-width: 373px) and (max-width: 832px) {
+
+    .map-secction{
+        width: 100vh;
+    }
+    
+    .site-main .brand-area .first-row .col-lg-4{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-left: -0.3rem;
+    }
+
+    .site-main {
+        width: 100vh;
+    }
+
+    .main-start-image {
+        display: none !important;
+    }
+    .site-main .site-banner {
+        background: url(../img/banner/poster1.jpg) no-repeat 0% 50%;
+        
+    }
+    .about-image{
+        width: 100%;
+    }
+
+    .divider{
+        height: 150px;
+    
+    
+    }
+    .divider1{
+        margin-top: -1px;
+    
+    }
+
+    footer.footer-area{
+        width: 100vh;
+    }
+    .site-main .brand-area .experience-area .call-area{
+        padding-left: 10rem;
+        margin-left: 11rem;
+    }
+    .site-main .brand-area .experience-area .years-area{
+        margin-left: 11rem;
+    }
+    .site-main .brand-area .experience-area .years-area .years{
+       margin-left: 5rem;
+    }
+    
+    .site-main > .services-area .services{
+        background: rgba(248, 252, 253, 0.973);
+        border-radius: 6px;
+        height: 23rem;
+        margin-left: 100px;
+        transition: box-shadow .7s ease;
+    }
+    .site-main .site-banner .site-title h1{
+        font-size: 4rem;
+        color: black;
+        font-family: montserrat;
+    }
+    .about .info .skill-bar .bar {
+        width: 100%;
+        height: .4rem;
+        margin-top: 5px;
+        border-radius: 4px;
+        background: #ccc;
+        position: relative;
+        margin-left: 50px;
+      }
+
+      .service-cont{
+          margin-left: 4rem !important;
+      }
+
+      body{
+          font-size: 1.1    rem;
+      }
+  }
+
+  
+
+@media only screen and (min-width: 936px) and (max-width: 832px) {
+
+    
+    .site-main .brand-area .first-row .col-lg-4{
+        margin-left: 0rem !important;
+    }
+  }
+
+
+
+  
   
 
 

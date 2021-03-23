@@ -372,7 +372,7 @@
 
         <!--  ======================= Project Area =============================  -->
 
-        <section class="project-area" id="project-area" onload="cilckFunction();">  
+        <section class="project-area" id="project-area">  
             <div class="shape-divider" style="background-color: #f9f3ed;" >
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 67.8" class="divider" preserveAspectRatio="none" > 
                     <path class="tt-shape-fill" style="fill:#ffffff;" 
@@ -678,33 +678,32 @@
     </script>
 
     <script>
-        function cilckFunction()
-        {
-            $(document).ready(function(){
-            let $btns = $('.project-area .button-group button');
+      
+        console.log("on click");
+        $(document).ready(function(){
+        let $btns = $('.project-area .button-group button');
 
 
-            $btns.click(function (e) {
+        $btns.click(function (e) {
 
-                $('.project-area .button-group button').removeClass('active');
-                e.target.classList.add('active');
+            $('.project-area .button-group button').removeClass('active');
+            e.target.classList.add('active');
 
-                let selector = $(e.target).attr('data-filter');
-                $('.project-area .grid').isotope({
-                    filter: selector
-                });
-
-                return false;
-            })
-
-            $('.project-area .button-group #btn1').trigger('click');
-
-            $('.project-area .grid .test-popup-link').magnificPopup({
-                type: 'image',
-                gallery: { enabled: true }
+            let selector = $(e.target).attr('data-filter');
+            $('.project-area .grid').isotope({
+                filter: selector
             });
-        }); 
-        }
+
+            return false;
+        })
+
+        $('.project-area .button-group #btn1').trigger('click');
+
+        $('.project-area .grid .test-popup-link').magnificPopup({
+            type: 'image',
+            gallery: { enabled: true }
+        });
+    }); 
         
     </script>
     
